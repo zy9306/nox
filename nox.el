@@ -1274,7 +1274,7 @@ Use `nox-managed-p' to determine if current buffer is managed.")
     (add-hook 'post-self-insert-hook 'nox--post-self-insert-hook nil t)
     (add-hook 'pre-command-hook 'nox--pre-command-hook nil t)
     (nox--setq-saving xref-prompt-for-identifier nil)
-    (nox--setq-saving company-backends '(company-capf))
+    ;; (nox--setq-saving company-backends '(company-capf))
     (nox--setq-saving company-tooltip-align-annotations t)
     (cl-pushnew (current-buffer) (nox--managed-buffers nox--cached-server)))
    (t
